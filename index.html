@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>ClickTaupe/Entrainez vous a deplacer votre curseur.</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<link href="bootstrap.min.css" rel="stylesheet"/>
+        <!-- Styles -->
+       
+        <!-- Styles -->
+       <script  type="text/javascript" src="jquery.js"></script>
+	          <script  type="text/javascript" src="bootstrap.js"></script>
+
+    </head>
+    <body style="">
+	<div class="container" style="border:solid 1px black;background-color:rgb(242,242,242);margin-top:25px;box-shadow:5px 5px 5px rgb(192,192,192)" >
+	
+     <div class="row" style="margin:50px;">
+	 <div class="col-lg-2 tabScore" >
+	 Score=0
+	 </div>
+	 <div class="col-lg-4 tabRestant" >
+	 Essai Restant=5
+	 </div>
+	 
+	 <div class="col-lg-2 " >
+	 	 <input type="button" class="btn btn-success" value="Debuter"/>
+
+	 </div>
+	 <div class="col-lg-2 tabBoutton" >
+	 <input type="button" class="btn btn-danger" value="Arreter"/>
+	 </div>
+
+	 
+	 
+	 
+	 </div>
+     <div class="row">
+		<div class="col-lg-1" id=" classe-1-A" onclick="valider('classe-1-A')"></div>
+		<div class="col-lg-1" id=" classe-1-B" onclick="valider('classe-1-B')"></div>
+		<div class="col-lg-1" id=" classe-1-C" onclick="valider('classe-1-C')"></div>
+		<div class="col-lg-1" id=" classe-1-D" onclick="valider('classe-1-D')"></div>
+		<div class="col-lg-1" id=" classe-1-E" onclick="valider('classe-1-E')"></div>
+		<div class="col-lg-1" id=" classe-1-F" onclick="valider('classe-1-F')"></div>
+		<div class="col-lg-1" id=" classe-1-G" onclick="valider('classe-1-G')"></div>
+		<div class="col-lg-1 " id=" classe-1-H" onclick="valider('classe-1-H')"></div>
+		<div class="col-lg-1 " id=" classe-1-I" onclick="valider('classe-1-I')"></div>
+		<div class="col-lg-1" id=" classe-1-J" onclick="valider('classe-1-J')"></div>
+		
+	 </div>
+	 
+	 
+	  <div class="row">
+		<div class="col-lg-1 " id="classe-2-A" onclick="valider('classe-2-A')"></div>
+		<div class="col-lg-1 " id="classe-2-B" onclick="valider('classe-2-B')"></div>
+		<div class="col-lg-1 " id="classe-2-C" onclick="valider('classe-2-C')"></div>
+		<div class="col-lg-1" id=" classe-2-D" onclick="valider('classe-2-D')"></div>
+		<div class="col-lg-1 " id="classe-2-E" onclick="valider('classe-2-E')"></div>
+		<div class="col-lg-1 " id="classe-2-F" onclick="valider('classe-2-F')"></div>
+		<div class="col-lg-1" id=" classe-2-G" onclick="valider('classe-2-G')"></div>
+		<div class="col-lg-1" id=" classe-2-H" onclick="valider('classe-2-H')"></div>
+		<div class="col-lg-1" id=" classe-2-I" onclick="valider('classe-2-I')"></div>
+		<div class="col-lg-1" id=" classe-2-J" onclick="valider('classe-2-J')"></div>
+		
+	 </div>
+	 
+	  <div class="row">
+		<div class="col-lg-1 " id="classe-3-A" onclick="valider('classe-3-A')"></div>
+		<div class="col-lg-1" id=" classe-3-B" onclick="valider('classe-3-B')"></div>
+		<div class="col-lg-1" id=" classe-3-C" onclick="valider('classe-3-C')"></div>
+		<div class="col-lg-1" id=" classe-3-D" onclick="valider('classe-3-D')"></div>
+		<div class="col-lg-1" id=" classe-3-E" onclick="valider('classe-3-E')"></div>
+		<div class="col-lg-1" id=" classe-3-F" onclick="valider('classe-3-F')"></div>
+		<div class="col-lg-1" id=" classe-3-G" onclick="valider('classe-3-G')"></div>
+		<div class="col-lg-1" id=" classe-3-H" onclick="valider('classe-3-H')"></div>
+		<div class="col-lg-1" id=" classe-3-I" onclick="valider('classe-3-I')"></div>
+		<div class="col-lg-1" id=" classe-3-J" onclick="valider('classe-3-J')"></div>
+		
+	 </div>
+	 
+	 
+	  <div class="row">
+		<div class="col-lg-1" id="classe-4-A" onclick="valider('classe-4-A')"></div>
+		<div class="col-lg-1" id="classe-4-B" onclick="valider('classe-4-B')"></div>
+		<div class="col-lg-1" id="classe-4-C" onclick="valider('classe-4-C')"></div>
+		<div class="col-lg-1" id="classe-4-D" onclick="valider('classe-4-D')"></div>
+		<div class="col-lg-1" id="classe-4-E" onclick="valider('classe-4-E')"></div>
+		<div class="col-lg-1" id="classe-4-F" onclick="valider('classe-4-F')"></div>
+		<div class="col-lg-1" id="classe-4-G" onclick="valider('classe-4-G')"></div>
+		<div class="col-lg-1" id="classe-4-H" onclick="valider('classe-4-H')"></div>
+		<div class="col-lg-1" id="classe-4-I" onclick="valider('classe-4-I')"></div>
+		<div class="col-lg-1" id="classe-4-J" onclick="valider('classe-4-J')"></div>
+		
+	 </div>
+	 
+	 
+	  <div class="row">
+		<div class="col-lg-1" id="classe-5-A" onclick="valider('classe-5-A')"></div>
+		<div class="col-lg-1" id=" classe-5-B" onclick="valider('classe-5-B')"></div>
+		<div class="col-lg-1" id=" classe-5-C" onclick="valider('classe-5-C')"></div>
+		<div class="col-lg-1 " id="classe-5-D" onclick="valider('classe-5-D')"></div>
+		<div class="col-lg-1 " id="classe-5-E" onclick="valider('classe-5-E')"></div>
+		<div class="col-lg-1" id=" classe-5-F" onclick="valider('classe-5-F')"></div>
+		<div class="col-lg-1 " id="classe-5-G" onclick="valider('classe-5-G')"></div>
+		<div class="col-lg-1" id=" classe-5-H" onclick="valider('classe-5-H')"></div>
+		<div class="col-lg-1" id=" classe-5-I" onclick="valider('classe-5-I')"></div>
+		<div class="col-lg-1 " id="classe-5-J" onclick="valider('classe-5-J')"></div>
+		
+	 </div>
+	 
+	 <div class="row" style="background-color:black;color:white;margin-top:100px;">
+	 Click sur la taupe. Version 1.0 By Ouedraogo F.S.M Serges
+	 </div>
+	 
+	 <style>
+	 .tabRestant
+	 {
+		color:white;
+		background-color:blue;
+		font-family:bold;
+		font-size:2em;
+		height:50px;
+	 }
+	 .col-lg-1
+	 {
+		padding:5px;
+		border:solid 1px black;
+		text-align:center;
+		background-color:white;
+		margin:5px;
+		height:50px;
+		border-radius:5px;
+		box-shadow:2px 2px 2px rgb(192,192,192);
+		font-size:1.3em;
+	 }
+	 .tabScore
+	 {
+	 font-size:2em;
+	 background-color:orange;
+	 color:white;
+	 font-family:bold;
+	 height:50px;
+	 
+	 }
+	 .col-lg-1:hover
+	 {
+		background-color:rgb(163,73,164);
+		cursor:pointer;
+		color:white;
+		border:solid 1px white;
+		
+	 }
+	 .btn 
+	 {
+	 height:50px;
+	 font-size:2em;
+	 }
+	 </style>
+	 
+	 <script type="text/javascript">
+	 var isPartyStart=false;
+	 var myInterval;
+	  var alphabet=["A","B","C","D","E","F","G","H","I","J"];
+	  var nbreEssaiRestant=5,score=0,currentTouche="";
+	 function generationAleatoire(min,max)
+	 {
+		var num=0;
+		while(num==0)
+		{
+			num=Math.floor(Math.random()*(max-min))
+		
+		}
+		return num;
+	 }
+	 
+	 
+	 
+	 function setTouche(classe)
+	 {
+	 //alert(classe);
+	 currentTouche=classe;
+		$("#"+classe).css( 
+		{
+			backgroundColor:"black",
+			color:"white",
+			border:"solid 1px black;;",
+		});
+	 }
+	 //Relancer le jeu
+	 $(".btn-danger").attr("disabled",function(){return true});
+	 $(".btn-success").on("click",function()
+	 {
+		 score=0;
+		 nbreEssaiRestant=5;
+		 currentTouche="";
+		 isPartyStart=true;
+		 $(".tabRestant").text("Essai  Restant=5");
+		 myInterval= setInterval(changerElement,1200);
+		 $(".btn-success").attr("disabled",function(){return true});
+		 $(".btn-danger").attr("disabled",function(){return false});
+	 })
+	 
+	 
+	 $(".btn-danger").on("click",function()
+	 {
+		 clearInterval(myInterval);
+		 isPartyStart=false;
+		 
+		 $(".btn-success").attr("disabled",function(){return false});
+		 $(".btn-danger").attr("disabled",function(){return true});
+
+	 })
+	 
+	 
+	 
+	 
+	 
+	 
+	 function desactivation()
+	 {
+	
+		for(var i=1;i<6;i++)
+		{
+			for(var j=0;j<10;j++)
+			{
+				$("#classe-"+i+"-"+alphabet[j]).css(
+				{
+					backgroundColor:"white",
+					color:"black",
+					
+					border:"solid 1px black",
+				})
+			}
+		}
+	 }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 function changerElement()
+	 {
+		desactivation();
+		var i=generationAleatoire(1,6),j=generationAleatoire(1,10);
+		setTouche("classe-"+i+"-"+alphabet[j]);
+		
+	 }
+	 
+	
+	 
+	 function valider(classe)
+	 {
+		if(isPartyStart)
+		{
+		if(nbreEssaiRestant!=0)
+		{
+			if(currentTouche==classe)
+			{
+				score+=1;
+				$(".tabScore").text("Score="+score);
+				$("#"+classe).css({backgroundColor:"green",color:"white",border:"solid 1px white",})
+			}
+			else
+			{
+				nbreEssaiRestant-=1;
+				$(".tabRestant").text("Essai Restant="+nbreEssaiRestant);
+				$("#"+classe).css({backgroundColor:"red",color:"white",border:"solid 1px white",})
+			}
+		}
+		else
+		{
+		
+			clearInterval(myInterval);
+			desactivation();
+			$(".btn-danger").attr("disabled",function(){return true;})
+			$(".btn-success").attr("disabled",function(){return false;})
+			nbreEssaiRestant=5;
+			isPartyStart=false;
+		}
+		}
+	 }
+	 </script>
+    </div>
+	</body>
+   
+</html>

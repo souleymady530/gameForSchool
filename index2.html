@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>TappeTouche V1.0/Entrainez avec le clavier.</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<link href="bootstrap.min.css" rel="stylesheet"/>
+        <!-- Styles -->
+       
+        <!-- Styles -->
+       <script  type="text/javascript" src="jquery.js"></script>
+	          <script  type="text/javascript" src="bootstrap.js"></script>
+
+    </head>
+    <body style="background-color:rgb(242,242,242);">
+	
+	 <div class="container" style="border:solid 1px black;" tabindex="0">
+	 
+	 
+	  <div class="row" style="margin:50px;">
+	 <div class="col-lg-2 tabScore" >
+	 Score=0
+	 </div>
+	 <div class="col-lg-4 tabRestant" >
+	 Essai Restant=5
+	 </div>
+	 
+	 <div class="col-lg-2 " >
+	 	 <input type="button" class="btn btn-success" value="Debuter"/>
+
+	 </div>
+	 <div class="col-lg-2 tabBoutton" >
+	 <input type="button" class="btn btn-danger" value="Arreter"/>
+	 </div>
+
+	 
+	 
+	 
+	 </div>
+	 
+	 <div class="row rowNum" style="background-color:lightblue;">
+		<div class="col-lg-1 " id="id-1" >1</div>
+		<div class="col-lg-1 " id="id-2">2</div>
+		<div class="col-lg-1 " id="id-3">3</div>
+		<div class="col-lg-1 " id="id-4">4</div>
+		<div class="col-lg-1 " id="id-5">5</div>
+		<div class="col-lg-1 " id="id-6">6</div>
+		<div class="col-lg-1 " id="id-7">7</div>
+		<div class="col-lg-1 " id="id-8">8</div>
+		<div class="col-lg-1 " id="id-9">9</div>
+		<div class="col-lg-1 " id="id-0">0</div>
+	 </div>
+	 <div class="row">
+		<div class="col-lg-1 " id="id-A">A</div>
+		<div class="col-lg-1 " id="id-Z">Z</div>
+		<div class="col-lg-1 " id="id-E">E</div>
+		<div class="col-lg-1 " id="id-R">R</div>
+		<div class="col-lg-1 " id="id-T">T</div>
+		<div class="col-lg-1 " id="id-Y">Y</div>
+		<div class="col-lg-1 " id="id-U">U</div>
+		<div class="col-lg-1 " id="id-I">I</div>
+		<div class="col-lg-1 " id="id-O">O</div>
+		<div class="col-lg-1 " id="id-P">P</div>
+	 </div>
+	 
+	 <div class="row">
+		<div class="col-lg-1" id="id-Q">Q</div>
+		<div class="col-lg-1" id="id-S">S</div>
+		<div class="col-lg-1" id="id-D">D</div>
+		<div class="col-lg-1" id="id-F">F_</div>
+		<div class="col-lg-1" id="id-G">G</div>
+		<div class="col-lg-1" id="id-H">H</div>
+		<div class="col-lg-1" id="id-J">J_</div>
+		<div class="col-lg-1" id="id-K">K</div>
+		<div class="col-lg-1" id="id-L">L</div>
+		<div class="col-lg-1" id="id-M">M</div>
+	 </div>
+	 
+	 <div class="row">
+		<div class="col-lg-1 col-lg-push-1" id="id-W">W</div>
+		<div class="col-lg-1 col-lg-push-1" id="id-X">X</div>
+		<div class="col-lg-1 col-lg-push-1" id="id-C">C</div>
+		<div class="col-lg-1 col-lg-push-1" id="id-V">V</div>
+		<div class="col-lg-1 col-lg-push-1" id="id-B">B</div>
+		<div class="col-lg-1 col-lg-push-1" id="id-N">N</div>
+	 </div>
+	 <div class="js"></div>
+	 <div class="row" style="background-color:black;color:white;margin-top:100px;">
+	 Tappe Touche. Version 1.0 By Ouedraogo Filwendé Souley-Mady Serges
+	 </div>
+	 
+	 <style>
+	  .col-lg-1:hover
+	 {
+		background-color:rgb(163,73,164);
+		cursor:pointer;
+		color:white;
+		border:solid 1px white;
+		
+	 }
+	 .tabRestant
+	 {
+		color:white;
+		background-color:blue;
+		font-family:bold;
+		font-size:2em;
+		height:50px;
+	 }
+	  .col-lg-1
+	 {
+		padding:5px;
+		border:solid 1px black;
+		text-align:center;
+		background-color:white;
+		margin:5px;
+		height:50px;
+		border-radius:5px;
+		box-shadow:2px 2px 2px rgb(192,192,192);
+		font-size:1.3em;
+	 }
+	
+	 .rowNum .col-lg-1
+	 {
+		left:15px;
+	 }
+	 .tabScore
+	 {
+	 font-size:2em;
+	 background-color:orange;
+	 color:white;
+	 font-family:bold;
+	 height:50px;
+	 
+	 }
+	 .cl-lg-1
+	 {
+	 font-family:bold;
+	 }
+	 .btn 
+	 {
+	 height:50px;
+	 font-size:2em;
+	 }
+	 </style>
+	 <script type="text/javascript">
+	 $(function()
+	 {
+	 
+	 });
+	 
+	 
+	 $(".container").on("keypress",function(event)
+	 {
+	 valider(String.fromCharCode(event.keyCode))
+	 })
+	 
+	 
+	 
+	 var isPartyStart=false;
+	 var myInterval;
+	  var alphabet=["1","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","2","3","4","5","6","7","8","9"];
+	  var nbreEssaiRestant=5,score=0,currentTouche="";
+	 function generationAleatoire(min,max)
+	 {
+		var num=0;
+		while(num==0)
+		{
+			num=Math.floor(Math.random()*(max-min))
+		}
+		return num;
+	 }
+	
+	 
+	 
+	 
+	 
+	 //ok
+	 function setTouche(classe,letter)
+	 {
+	 //alert(classe);
+	 currentLetter=letter;
+		$("#"+classe).css( 
+		{
+			backgroundColor:"black",
+			color:"white",
+			border:"solid 1px black;;",
+		});
+	 }
+	 
+	 
+	 
+	 //Relancer le jeu
+	 $(".btn-danger").attr("disabled",function(){return true});
+	 $(".btn-success").on("click",function()
+	 {
+	 	 $('.container').focus();
+
+		 score=0;
+		 nbreEssaiRestant=5;
+		 currentTouche="";
+		 myInterval= setInterval(changerElement,2000);
+		 $(".btn-success").attr("disabled",function(){return true});
+		 $(".btn-danger").attr("disabled",function(){return false});
+	 })
+	 
+	 
+	 $(".btn-danger").on("click",function()
+	 {
+		 clearInterval(myInterval);
+		 $(".btn-success").attr("disabled",function(){return false});
+		 $(".btn-danger").attr("disabled",function(){return true});
+
+	 })
+	 
+	 
+	 
+	 
+	 
+	 //ok
+	 function desactivation()
+	 {
+	
+		for(var i=0;i<37;i++)
+		{
+			
+				$("#id-"+alphabet[i]).css(
+				{
+					backgroundColor:"white",
+					color:"black",
+					
+					border:"solid 1px black",
+				})
+			
+		}
+	 }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 function changerElement()
+	 {
+		desactivation();
+		var i=generationAleatoire(0,37);
+		setTouche("id-"+alphabet[i],alphabet[i]);
+	 }
+	
+	 
+	 function valider(letter)
+	 {
+		if(nbreEssaiRestant!=0)
+		{
+			if(currentLetter==letter)
+			{
+				score+=1;
+				$(".tabScore").text("Score="+score);
+				$("#id-"+letter).css({backgroundColor:"green",color:"white",border:"solid 1px white",})
+			}
+			else
+			{
+				nbreEssaiRestant-=1;
+				$(".tabRestant").text("Essai Restant="+nbreEssaiRestant);
+				$("#id-"+letter).css({backgroundColor:"red",color:"white",border:"solid 1px white",})
+			}
+		}
+		else
+		{
+			clearInterval(myInterval);
+			desactivation();
+			
+			nbreEssaiRestant=5;
+		}
+	 }
+	 </script>
+    </div>
+	</body>
+   
+</html>
